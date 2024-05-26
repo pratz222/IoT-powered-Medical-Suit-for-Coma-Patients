@@ -10,3 +10,6 @@ This innovative suit seamlessly integrates an array of sensors to gather vital d
 
 All this data is transmitted in real-time to a cloud platform via a WiFi-enabled ESP32 microcontroller, ensuring that every critical health metric is just a tap away on a specially designed Android application.
 The app also has record of all the treatment done on the patients and medications given which makes it easier for other new doctors to easily analyse the patient treatment history and also ensures transparency between patients family and hospital. 
+
+![test](https://github.com/pratz222/IoT-powered-Medical-Suit-for-Coma-Patients/assets/53640877/5d7b330d-c748-43f2-a29e-92e5ae16a59e) ![suit](https://github.com/pratz222/IoT-powered-Medical-Suit-for-Coma-Patients/assets/53640877/1aa17f25-c322-43af-b46f-5d1b4d5cf153)
+
