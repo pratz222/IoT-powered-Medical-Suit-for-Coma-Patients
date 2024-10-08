@@ -1,15 +1,63 @@
-# IoT-powered-Medical-Suit-for-Coma-Patients
-This innovative suit seamlessly integrates an array of sensors to gather vital data on a patient's heart rate, brain activity, muscle movement, body temperature, and even position. This real-time information is securely transmitted to a cloud platform for remote access by authorized personnel, including doctors, family members, and caregivers, through a user-friendly mobile app.
+# IoT-Powered Medical Suit for Coma Patients
 
-👁️ 𝐄𝐲𝐞 𝐁𝐥𝐢𝐧𝐤 𝐒𝐞𝐧𝐬𝐨𝐫𝐬: Empowering non-verbal communication for coma patients. 
-🧠 𝐄𝐄𝐆 𝐌𝐨𝐧𝐢𝐭𝐨𝐫𝐢𝐧𝐠: Providing critical insights into brain activity. 
-❤️ 𝐄𝐂𝐆 & 𝐒𝐏𝐎2 𝐒𝐞𝐧𝐬𝐨𝐫𝐬: Ensuring continuous heart and oxygen saturation tracking. 
-💪 𝐄𝐌𝐆 𝐒𝐞𝐧𝐬𝐨𝐫𝐬: Assessing muscle activity for comprehensive health analysis. 
-🌡️ 𝐓𝐞𝐦𝐩𝐞𝐫𝐚𝐭𝐮𝐫𝐞 𝐒𝐞𝐧𝐬𝐨𝐫𝐬: Keeping a close watch on vital body parameters.
-🔄 𝐀𝐜𝐜𝐞𝐥𝐞𝐫𝐨𝐦𝐞𝐭𝐞𝐫𝐬 & 𝐆𝐲𝐫𝐨𝐬𝐜𝐨𝐩𝐞: Preventing falls by detecting body movement.
+This innovative medical suit seamlessly integrates an array of sensors to gather vital data on a patient's heart rate, brain activity, muscle movement, body temperature, and even position. The real-time information is securely transmitted to a cloud platform for remote access by authorized personnel, including doctors, family members, and caregivers, through a user-friendly mobile app.
 
-All this data is transmitted in real-time to a cloud platform via a WiFi-enabled ESP32 microcontroller, ensuring that every critical health metric is just a tap away on a specially designed Android application.
-The app also has record of all the treatment done on the patients and medications given which makes it easier for other new doctors to easily analyse the patient treatment history and also ensures transparency between patients family and hospital. 
+## Features
+
+- 👁️ **Eye Blink Sensors:** Enable non-verbal communication for coma patients.
+- 🧠 **EEG Monitoring:** Provides critical insights into brain activity.
+- ❤️ **ECG & SpO₂ Sensors:** Ensure continuous heart and oxygen saturation tracking.
+- 💪 **EMG Sensors:** Assess muscle activity for comprehensive health analysis.
+- 🌡️ **Temperature Sensors:** Monitor vital body parameters.
+- 🔄 **Accelerometers & Gyroscopes:** Prevent falls by detecting body movement and posture changes.
+
+## Hardware Setup
+
+### Components:
+- **ESP32 Microcontroller**: For data processing and transmission.
+- **Eye Blink Sensor (IR-based)**: To detect eye movements.
+- **ECG & SpO₂ Sensors**: To monitor heart rate and blood oxygen levels.
+- **EEG Sensor**: To capture brain activity.
+- **EMG Sensor**: To assess muscle activity.
+- **Temperature Sensor**: To monitor body temperature.
+- **Accelerometer & Gyroscope**: For fall detection and posture monitoring.
+
+### Pin Configurations:
+
+- **ESP32 Pin Mapping:**
+  - **Eye Blink Sensor**: Connected to GPIO 16.
+  - **ECG Sensor**: Connected to GPIO 32.
+  - **SpO₂ Sensor**: Connected to GPIO 33.
+  - **EEG Sensor**: Connected to GPIO 34.
+  - **EMG Sensor**: Connected to GPIO 35.
+  - **Temperature Sensor (DS18B20 or similar)**: Connected to GPIO 4.
+  - **Accelerometer & Gyroscope (MPU6050)**: I2C SDA connected to GPIO 21, SCL connected to GPIO 22.
+  
+### Power Requirements:
+- Ensure that the ESP32 and all sensors are powered appropriately, either through a common 5V source or through an external power supply if required by specific sensors.
+
+## Data Transmission
+
+All collected data from the sensors is transmitted in real-time to a cloud platform via the ESP32 microcontroller using Wi-Fi. The data is securely stored and can be accessed by healthcare professionals and family members via a mobile app.
+
+### Wi-Fi Configuration:
+- Connect the ESP32 to a Wi-Fi network by entering your SSID and password in the source code.
+- Ensure stable internet connectivity for real-time data transmission.
+
+## Mobile Application
+
+The Android app allows remote monitoring of vital signs and records all treatments and medications administered. This feature facilitates:
+- Easy analysis of patient treatment history.
+- Transparent communication between the patient's family and the healthcare providers.
+
+## Cloud Platform
+
+- **Cloud Integration**: Data is sent to a cloud server for real-time access and storage.
+- The cloud platform allows authorized users to monitor patient health metrics from anywhere.
+
+## Conclusion
+
+The **IoT-Powered Medical Suit for Coma Patients** aims to enhance patient care through continuous, real-time monitoring, enabling healthcare providers and families to stay informed of the patient’s condition at all times.
 
 ![test](https://github.com/pratz222/IoT-powered-Medical-Suit-for-Coma-Patients/assets/53640877/5d7b330d-c748-43f2-a29e-92e5ae16a59e) ![suit](https://github.com/pratz222/IoT-powered-Medical-Suit-for-Coma-Patients/assets/53640877/1aa17f25-c322-43af-b46f-5d1b4d5cf153)
 
